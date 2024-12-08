@@ -1,0 +1,433 @@
+.generator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.formGeneral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.functions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.functions button {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #00da00;
+  position: relative;
+  cursor: pointer;
+}
+
+.functions button:hover {
+  background-color: #00da0011;
+  transition: background-color 0.2s;
+}
+
+.functions button p {
+  color: #00da00;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  font-family: var(--font-geist-mono);
+  line-height: 1.1;
+}
+
+.functions button.activeButton {
+  filter: grayscale(0);
+  transition: filter 0.3s;
+  transition: background-color 0.3s;
+}
+
+.functions button.inactiveButton {
+  filter: grayscale(1);
+  transition: filter 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.inputFile {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.inputTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputTitle h2 {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-family: var(--font-geist-mono);
+  line-height: 1;
+  color: white;
+  text-align: center;
+}
+
+.inputTitle p {
+  color: rgb(121, 121, 121);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.inputAdjuntar {
+  width: 100%;
+  height: 300px;
+  border: 2px dashed #505050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.inputAdjuntar:hover{
+  border: 2px dashed #00da00;
+}
+
+.previewContainer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+}
+
+.previewContainer .imageAdjunta {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pdfContainer {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00da00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+}
+
+.pdfContainer p {
+  color: #00da00;
+  font-size: 1.1rem;
+}
+
+.fileMessage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fileMessage p {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.intoInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.intoInput p {
+  color: #303030;
+  font-size: 1.2rem;
+  font-family: var(--font-geist-mono);
+}
+
+.inputEnlace {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.inputEnlace label {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.inputEnlace input {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid grey;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: white;
+  outline: none;
+  -webkit-appearance: none; /* Elimina el estilo predeterminado de Safari */
+  appearance: none;
+}
+
+.inputEnlace input::placeholder {
+  font-size: 16px;
+  color: grey;
+  letter-spacing: 1px;
+}
+
+.input::placeholder {
+  color: #848484;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.inputEnlace input:hover,
+.inputEnlace input:focus,
+.inputEnlace input:active,
+.input[type="password"]:focus {
+  border: 1px solid #00da00;
+  color: white;
+  font-size: 16px;
+  -webkit-appearance: none; /* Elimina el estilo predeterminado de Safari */
+  appearance: none;
+  -webkit-box-shadow: 0 0 0px 1000px #0048ff00 inset !important; /* Fondo blanco para el campo */
+  box-shadow: 0 0 0px 1000px #0048ff00 inset !important;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important; /* Cambia el color del texto */
+  -webkit-box-shadow: 0 0 0px 1000px #0048ff00 inset !important; /* Fondo blanco para el campo */
+  box-shadow: 0 0 0px 1000px #0048ff00 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  font-size: 16px;
+  -webkit-appearance: none; /* Elimina el estilo predeterminado de Safari */
+  appearance: none;
+}
+
+.buttonGenerate {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #00da00;
+  border: 1px solid #00da00;
+  font-family: var(--font-geist-airstrike);
+  margin-bottom: 150px;
+  cursor: pointer;
+}
+
+.buttonGenerate p {
+  color: #1b1b1b;
+  font-size: 5.8vw;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.buttonGenerate:disabled {
+  background-color: transparent;
+  border: 1px solid #303030;
+  cursor: not-allowed; /* Indica que no se puede interactuar */ /* Color del texto para el estado deshabilitado */
+}
+
+.buttonGenerate:disabled p {
+  color: #303030;
+}
+
+.resultados {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0px;
+  gap: 20px;
+}
+
+.firstSpace {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom:20px;
+}
+
+.firstSpace h2 {
+  color: #00da00;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-family: var(--font-geist-mono);
+}
+
+.codigo {
+  width: 70%;
+  aspect-ratio: 1;
+  position: relative;
+  outline: 5px solid #00da00;
+}
+
+.codigo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info button {
+  width: 100%;
+  height: 65px;
+  background-color: #005600;
+  border: 2px solid #008c00;
+  color: #00da00;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  cursor: pointer;
+  font-family: var(--font-geist-mono);
+  letter-spacing: 0.5px;
+}
+
+.info button span {
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: #00da00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info button:hover {
+  background-color: #00da00;
+  color: black;
+}
+
+.linkGenerate {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.linkGenerate a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.linkGenerate a:hover {
+  color: #00da00;
+}
+
+.containertitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.containertitle p {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.containertitle span {
+  width: 36px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00da00;
+  border-radius: 50px;
+}
+
+.buttonBack {
+  width: 70%;
+  height: 65px;
+  background-color: #2d2d2d;
+  border: 2px solid #8d8d8d;
+  color: #8d8d8d;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  cursor: pointer;
+  font-family: var(--font-geist-mono);
+  letter-spacing: 0.5px;
+}
+
+.buttonBack span {
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: #8d8d8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonBack:hover {
+  background-color: #8d8d8d;
+  color: black;
+}

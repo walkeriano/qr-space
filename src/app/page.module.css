@@ -1,0 +1,34 @@
+.main{
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #0F0F0F;
+  position: relative;
+}
+
+
+.degrad{
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(#9D0000, #9d000000);
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+}
+
+.texture{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 40%;
+}
+
+.texture img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
