@@ -31,13 +31,15 @@ export default function Home() {
             <Intro />
           </>
         ) : (
-          <>
+          <section className={styles.flexOperation}>
             <Header />
             <Generador />
-          </>
+          </section>
         )}
-
         <div className={styles.texture}>
+          <Image src="/texture.svg" alt="bg-texture" fill={true} />
+        </div>
+        <div className={styles.textureTwo}>
           <Image src="/texture.svg" alt="bg-texture" fill={true} />
         </div>
         <div className={styles.degrad}></div>
