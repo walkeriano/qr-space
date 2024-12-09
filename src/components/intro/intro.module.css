@@ -45,3 +45,11 @@
     background-position: calc(100% / 4) -14px, calc(3 * 100% / 4) 14px;
   }
 }
+
+
+@media (min-width: 850px){
+  .containerLoader img{
+    width: 350px;
+    height: 250px;
+  }
+}
