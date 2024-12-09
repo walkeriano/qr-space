@@ -13,7 +13,7 @@
 .degrad{
   width: 100%;
   height: 50%;
-  background: linear-gradient(#9D0000, #9d000000);
+  background: linear-gradient(#9d00006b, #9d000000);
   position: absolute;
   top: 0px;
   z-index: 0;
