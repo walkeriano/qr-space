@@ -457,4 +457,17 @@
     line-height: 1.3;
   }
 
+
+.resultados {
+  width: 60%;
+  padding: 65px 0px;
+}
+
+.inputFile {
+  width: 60%;
+}
+
+.buttonGenerate {
+  width: 60%;
+}
 }
