@@ -57,7 +57,7 @@ export default function View() {
         <section className={styles.boxContent}>
           {fileType.startsWith("image/") ? (
             <div className={styles.imageVisual}>
-              <Image src={data?.url} alt="Imagen almacenada" fill={true} />
+              <img src={data?.url} alt="Imagen almacenada"/>
             </div>
           ) : fileType === "application/pdf" ? (
             <div className={styles.fileVisual}>
