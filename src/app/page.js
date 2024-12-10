@@ -40,7 +40,7 @@ export default function Home() {
           <Image src="/texture.svg" alt="bg-texture" fill={true} />
         </div>
         <div className={styles.textureTwo}>
-          <Image src="/texture.svg" alt="bg-texture" fill={true} />
+          <Image src="/textureTwo.svg" alt="bg-texture" fill={true} />
         </div>
         <div className={styles.degrad}></div>
       </main>

@@ -56,3 +56,10 @@
     border-radius: 0 50%;
   }
 }
+
+@media (min-width: 850px){
+  .containerLoader {
+    width: 100%;
+    height: 100vh;
+  }
+}

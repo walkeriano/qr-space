@@ -174,10 +174,10 @@ export default function Generador() {
                     {file?.type === "application/pdf" ? (
                       <div className={styles.pdfContainer}>
                         <Image
-                          src="/logo.svg"
+                          src="/iconpdf.svg"
                           alt="PDF preview"
-                          width={200}
-                          height={200}
+                          width={150}
+                          height={150}
                         />
                       </div>
                     ) : (
